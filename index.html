@@ -446,6 +446,20 @@
     .photo-caption{flex-direction:column;gap:4px}
     .photo-caption-detail{text-align:left}
   }
+
+  .systems-section{background:#f1f2ee;border-bottom:1px solid var(--borda)}
+  .systems-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px}
+  .system-option{background:#faf9f6;border:1px solid #dde2d9;border-radius:12px;padding:34px;display:flex;flex-direction:column}
+  .offgrid-option{background:#e9eee6;border-color:#cdd8c9}
+  .system-type{font-size:.66rem;letter-spacing:.13em;font-weight:600;color:#63806c}
+  .system-option h3{font-size:1.9rem;font-weight:600;color:#152e40;margin:18px 0}
+  .system-option p,.system-option li{color:#5e6f77;font-size:.94rem;line-height:1.75}
+  .system-option ul{padding-left:18px;margin:20px 0 26px}
+  .system-option li{margin-bottom:8px}
+  .system-link{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #d4ddd1;padding-top:18px;margin-top:auto;color:#183d56;font-size:.9rem;font-weight:600}
+  .systems-note{font-size:.83rem;color:#68757c;margin-top:22px;max-width:800px}
+  .system-link-inline{text-decoration:underline;text-underline-offset:3px;color:#183d56}
+  @media(max-width:640px){.systems-grid{grid-template-columns:1fr;gap:18px}.system-option{padding:25px}}
 </style>
 </head>
 <body>
@@ -460,7 +474,7 @@
       Solar<b>Max</b>
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#beneficios">Vantagens</a></li>
+      <li><a href="#sistemas">Soluções</a></li>
       <li><a href="#calculadora">Calculadora</a></li>
       <li><a href="#como-funciona">Como funciona</a></li>
       <li><a href="#galeria">Instalações</a></li>
@@ -484,7 +498,7 @@
     <div class="hero-copy">
       <span class="hero-badge"><span class="dot"></span>Energia solar em Araras e região</span>
       <h1>Reduza sua conta de luz em <span class="grad">até 95%</span> com energia solar</h1>
-      <p class="lead">A Solar Max cuida de tudo — projeto, instalação e homologação. Gere sua própria energia, valorize seu imóvel e liberte-se dos aumentos da tarifa.</p>
+      <p class="lead">Soluções conectadas à rede e off-grid com baterias. A Solar Max cuida do projeto e da instalação para você gerar sua própria energia, em casa, na empresa ou no campo.</p>
       <div class="hero-cta">
         <a href="#calculadora" class="btn btn-primary btn-lg">
           <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="2" width="16" height="20" rx="3" stroke="#fff" stroke-width="2"/><path d="M8 6h8M8 10h2M12 10h4M8 14h2M12 14h4M8 18h2" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
@@ -521,6 +535,32 @@
       <div class="stat reveal d2"><b data-count="4" data-suffix=" anos">0</b><span>Payback médio</span></div>
       <div class="stat v reveal d3"><b data-count="100" data-suffix="%">0</b><span>Energia limpa</span></div>
     </div>
+  </div>
+</section>
+
+<!-- ================= SISTEMAS ================= -->
+<section class="section systems-section" id="sistemas">
+  <div class="container">
+    <span class="eyebrow">Soluções para cada necessidade</span>
+    <h2 class="section-title">Na cidade ou no campo,<br>energia do seu jeito.</h2>
+    <p class="section-sub">Escolha entre um sistema conectado à rede elétrica e uma solução independente com armazenamento em baterias.</p>
+    <div class="systems-grid">
+      <article class="system-option">
+        <span class="system-type">01 / CONECTADO À REDE</span>
+        <h3>On-grid</h3>
+        <p>Gere energia solar para reduzir o consumo da rede e sua conta de luz. Ideal para imóveis com conexão à concessionária.</p>
+        <ul><li>Compensação de energia conforme as regras da concessionária</li><li>Normalmente não utiliza baterias</li><li>O sistema convencional desliga durante falta de energia</li></ul>
+        <a class="system-link js-wa" href="#" data-msg="Olá, Solar Max! Quero um orçamento de sistema on-grid conectado à rede elétrica.">Pedir orçamento on-grid <span aria-hidden="true">↗</span></a>
+      </article>
+      <article class="system-option offgrid-option">
+        <span class="system-type">02 / INDEPENDENTE DA REDE</span>
+        <h3>Off-grid</h3>
+        <p>Produza e armazene energia em baterias para alimentar os equipamentos previstos no projeto, sem depender de conexão à rede elétrica.</p>
+        <ul><li>Uma opção para sítios e locais sem acesso à rede</li><li>Baterias para uso à noite e em períodos de pouca geração</li><li>Autonomia dimensionada conforme consumo e equipamentos</li></ul>
+        <a class="system-link js-wa" href="#" data-msg="Olá, Solar Max! Quero um orçamento de sistema off-grid com baterias. Gostaria de avaliar o consumo e a autonomia necessária.">Pedir orçamento off-grid <span aria-hidden="true">↗</span></a>
+      </article>
+    </div>
+    <p class="systems-note">Para off-grid, avaliamos os equipamentos, as horas de uso e a autonomia desejada para dimensionar os painéis e as baterias.</p>
   </div>
 </section>
 
@@ -573,7 +613,7 @@
     <div class="center">
       <span class="eyebrow verde reveal">Calculadora Solar</span>
       <h2 class="section-title center reveal d1">Descubra quantas placas você precisa</h2>
-      <p class="section-sub center reveal d2">Informe o valor da sua conta ou seu consumo mensal e veja uma estimativa na hora.</p>
+      <p class="section-sub center reveal d2">Simule um sistema conectado à rede (on-grid) pelo valor da sua conta ou consumo mensal. Para off-grid com baterias, <a href="#sistemas" class="system-link-inline">solicite uma avaliação personalizada</a>.</p>
     </div>
 
     <div class="calc-wrap">
@@ -772,6 +812,14 @@
         <label for="fCidade">Cidade</label>
         <input type="text" id="fCidade" placeholder="Ex.: Araras" />
       </div>
+      <div class="field">
+        <label for="fSistema">Qual solução você procura?</label>
+        <select id="fSistema">
+          <option value="Ainda não sei — quero orientação">Ainda não sei — quero orientação</option>
+          <option value="On-grid — conectado à rede">On-grid — conectado à rede</option>
+          <option value="Off-grid — independente, com baterias">Off-grid — independente, com baterias</option>
+        </select>
+      </div>
       <div class="field no-prefix">
         <label for="fConta">Valor médio da conta de luz</label>
         <input type="text" id="fConta" placeholder="Ex.: R$ 450" />
@@ -799,7 +847,7 @@
       </div>
       <div class="foot-col">
         <h4>Navegação</h4>
-        <a href="#beneficios">Vantagens</a>
+        <a href="#sistemas">On-grid e off-grid</a>
         <a href="#calculadora">Calculadora solar</a>
         <a href="#como-funciona">Como funciona</a>
         <a href="#galeria">Instalações</a>
@@ -1049,8 +1097,10 @@ $('#leadForm').addEventListener('submit', e => {
   const cidade = $('#fCidade').value.trim();
   const conta = $('#fConta').value.trim();
   const extra = $('#fMsg').value.trim();
+  const sistema = $('#fSistema').value;
   let msg = `Olá, Solar Max! Meu nome é ${nome || '(não informado)'}.`;
   if (cidade) msg += ` Sou de ${cidade}.`;
+  msg += ` Solução de interesse: ${sistema}.`;
   if (conta) msg += ` Minha conta de luz é de cerca de ${conta}.`;
   if (extra) msg += ` ${extra}`;
   msg += ' Gostaria de um orçamento de energia solar. 🙂';
