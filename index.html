@@ -460,6 +460,13 @@
   .systems-note{font-size:.83rem;color:#68757c;margin-top:22px;max-width:800px}
   .system-link-inline{text-decoration:underline;text-underline-offset:3px;color:#183d56}
   @media(max-width:640px){.systems-grid{grid-template-columns:1fr;gap:18px}.system-option{padding:25px}}
+  .services-heading{margin-top:48px;padding-top:32px;border-top:1px solid #d7ded3}
+  .services-heading h3{font-size:1.4rem;font-weight:600;color:#152e40}
+  .services-heading p{margin-top:10px;color:var(--texto-suave);font-size:.95rem}
+  .services-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:26px}
+  .services-grid .system-option{padding:28px;min-width:0}
+  .services-grid h3{font-size:1.35rem;line-height:1.3}
+  @media(max-width:960px){.services-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -498,7 +505,7 @@
     <div class="hero-copy">
       <span class="hero-badge"><span class="dot"></span>Energia solar em Araras e região</span>
       <h1>Reduza sua conta de luz em <span class="grad">até 95%</span> com energia solar</h1>
-      <p class="lead">Soluções conectadas à rede e off-grid com baterias. A Solar Max cuida do projeto e da instalação para você gerar sua própria energia, em casa, na empresa ou no campo.</p>
+      <p class="lead">Energia solar on-grid e off-grid, limpeza e manutenção de placas, mercado livre de energia e energia por assinatura. Soluções para sua casa, empresa ou propriedade rural.</p>
       <div class="hero-cta">
         <a href="#calculadora" class="btn btn-primary btn-lg">
           <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="2" width="16" height="20" rx="3" stroke="#fff" stroke-width="2"/><path d="M8 6h8M8 10h2M12 10h4M8 14h2M12 14h4M8 18h2" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
@@ -543,7 +550,7 @@
   <div class="container">
     <span class="eyebrow">Soluções para cada necessidade</span>
     <h2 class="section-title">Na cidade ou no campo,<br>energia do seu jeito.</h2>
-    <p class="section-sub">Escolha entre um sistema conectado à rede elétrica e uma solução independente com armazenamento em baterias.</p>
+    <p class="section-sub">Da instalação e manutenção de painéis à contratação de energia: encontre a solução para sua casa, empresa ou propriedade rural.</p>
     <div class="systems-grid">
       <article class="system-option">
         <span class="system-type">01 / CONECTADO À REDE</span>
@@ -561,6 +568,13 @@
       </article>
     </div>
     <p class="systems-note">Para off-grid, avaliamos os equipamentos, as horas de uso e a autonomia desejada para dimensionar os painéis e as baterias.</p>
+    <div class="services-heading"><h3>Mais soluções para sua energia</h3><p>Cuide dos seus painéis ou conheça outras formas de contratar energia.</p></div>
+    <div class="services-grid">
+      <article class="system-option"><span class="system-type">03 / SERVIÇOS E SOLUÇÕES</span><h3>Limpeza e manutenção de placas</h3><p>Cuide do seu sistema solar com limpeza dos módulos e avaliação de manutenção para manter o funcionamento e acompanhar o desempenho.</p><ul><li>Limpeza de placas solares</li><li>Avaliação do sistema e identificação de falhas</li><li>Solicite uma visita para avaliar o serviço</li></ul><a class="system-link js-wa" href="#" data-msg="Olá, Solar Max! Quero um orçamento de limpeza e manutenção de placas solares.">Solicitar limpeza e manutenção<span aria-hidden="true">↗</span></a></article>
+      <article class="system-option"><span class="system-type">04 / SERVIÇOS E SOLUÇÕES</span><h3>Mercado livre de energia</h3><p>Conheça alternativas de contratação de energia para sua empresa. Avaliamos o perfil de consumo e as possibilidades de atendimento.</p><ul><li>Análise do perfil e da conta de energia</li><li>Orientação sobre opções de contratação</li><li>Viabilidade e condições avaliadas caso a caso</li></ul><a class="system-link js-wa" href="#" data-msg="Olá, Solar Max! Tenho interesse no mercado livre de energia. Quero avaliar as opções para minha empresa.">Avaliar minha empresa<span aria-hidden="true">↗</span></a></article>
+      <article class="system-option"><span class="system-type">05 / SERVIÇOS E SOLUÇÕES</span><h3>Energia por assinatura</h3><p>Conheça uma alternativa para economizar na conta de luz sem instalar placas no seu imóvel. Consulte a disponibilidade e as condições para sua unidade consumidora.</p><ul><li>Sem instalação de painéis no imóvel</li><li>Avaliação da conta e da disponibilidade de atendimento</li><li>Condições e economia conforme a proposta</li></ul><a class="system-link js-wa" href="#" data-msg="Olá, Solar Max! Tenho interesse em energia por assinatura. Quero consultar a disponibilidade e as condições para meu imóvel.">Conhecer energia por assinatura<span aria-hidden="true">↗</span></a></article>
+    </div>
+
   </div>
 </section>
 
@@ -818,6 +832,10 @@
           <option value="Ainda não sei — quero orientação">Ainda não sei — quero orientação</option>
           <option value="On-grid — conectado à rede">On-grid — conectado à rede</option>
           <option value="Off-grid — independente, com baterias">Off-grid — independente, com baterias</option>
+          <option value="Limpeza e manutenção de placas">Limpeza e manutenção de placas</option>
+          <option value="Mercado livre de energia">Mercado livre de energia</option>
+          <option value="Energia por assinatura">Energia por assinatura</option>
+
         </select>
       </div>
       <div class="field no-prefix">
@@ -847,7 +865,7 @@
       </div>
       <div class="foot-col">
         <h4>Navegação</h4>
-        <a href="#sistemas">On-grid e off-grid</a>
+        <a href="#sistemas">Soluções e serviços</a>
         <a href="#calculadora">Calculadora solar</a>
         <a href="#como-funciona">Como funciona</a>
         <a href="#galeria">Instalações</a>
