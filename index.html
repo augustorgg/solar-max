@@ -1068,10 +1068,10 @@ function calcular() {
   $('#rEco25').textContent = brl(eco25);
 
   // botão whatsapp com dados
-  const msg = `Olá, Solar Max! Fiz a simulação no site 👇\n` +
-    `• Conta atual: ${brl(conta)}/mês (${num(consumo)} kWh)\n` +
-    `• Sistema sugerido: ${nPlacas} placas (${num(kwpReal)} kWp)\n` +
-    `• Economia estimada: ${brl(ecoMes)}/mês\n` +
+  const msg = `Olá, Solar Max! Fiz a simulação no site:\n` +
+    `- Conta atual: ${brl(conta)}/mês (${num(consumo)} kWh)\n` +
+    `- Sistema sugerido: ${nPlacas} placas (${num(kwpReal)} kWp)\n` +
+    `- Economia estimada: ${brl(ecoMes)}/mês\n` +
     `Quero um orçamento detalhado. Minha cidade é: `;
   $('#btnWaResult').href = waURL(msg);
   $('#btnWaResult').target = '_blank';
@@ -1103,7 +1103,7 @@ $('#leadForm').addEventListener('submit', e => {
   msg += ` Solução de interesse: ${sistema}.`;
   if (conta) msg += ` Minha conta de luz é de cerca de ${conta}.`;
   if (extra) msg += ` ${extra}`;
-  msg += ' Gostaria de um orçamento de energia solar. 🙂';
+  msg += ' Gostaria de um orçamento de energia solar.';
   window.open(waURL(msg), '_blank', 'noopener');
 });
 </script>
