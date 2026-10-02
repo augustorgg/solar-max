@@ -18,8 +18,8 @@ Os parâmetros ficam no objeto `CONFIG`, no início do `<script>` em `index.html
 
 ```js
 const CONFIG = {
-  phone: '5519999999999',           // WhatsApp: 55 + DDD + número, só dígitos
-  phoneDisplay: '(19) 99999-9999',  // como aparece na tela
+  phone: '5519992734734',           // WhatsApp: 55 + DDD + número, só dígitos
+  phoneDisplay: '(19) 99273-4734',  // como aparece na tela
   tarifa: 0.95,        // R$/kWh
   hsp: 5.0,            // horas de sol pleno médias
   pr: 0.78,            // fator de performance
@@ -32,7 +32,6 @@ const CONFIG = {
 
 ## Pendências antes de ir para produção
 
-- Trocar `phone` e `phoneDisplay` pelo WhatsApp real
 - Substituir as fotos da galeria (hoje vêm do Unsplash) por instalações reais
 - Revisar depoimentos e números da seção de estatísticas
 
