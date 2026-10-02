@@ -653,10 +653,10 @@
         <details class="adv">
           <summary>⚙️ Ajustes avançados (opcional)</summary>
           <div class="adv-body">
-            <div class="range-row"><span>Tarifa de energia</span><span id="tarifaVal">R$ 0,95 / kWh</span></div>
-            <input type="range" id="tarifa" min="0.6" max="1.4" step="0.01" value="0.95" />
-            <div class="range-row" style="margin-top:14px"><span>Potência de cada placa</span><span id="placaVal">570 W</span></div>
-            <input type="range" id="potPlaca" min="450" max="620" step="5" value="570" />
+            <div class="range-row"><span>Tarifa de energia</span><span id="tarifaVal">R$ 1,10 / kWh</span></div>
+            <input type="range" id="tarifa" min="0.6" max="1.4" step="0.01" value="1.10" />
+            <div class="range-row" style="margin-top:14px"><span>Potência de cada placa</span><span id="placaVal">600 W</span></div>
+            <input type="range" id="potPlaca" min="450" max="620" step="5" value="600" />
           </div>
         </details>
 
@@ -886,10 +886,10 @@ const CONFIG = {
   phone: '5519992734734',           // WhatsApp da empresa
   phoneDisplay: '(19) 99273-4734',  // Telefone exibido no site
   // Parâmetros técnicos de cálculo (irradiação de Araras/região)
-  tarifa: 0.95,        // R$/kWh
+  tarifa: 1.10,        // R$/kWh
   hsp: 5.0,            // horas de sol pleno médias
   pr: 0.78,            // fator de performance do sistema
-  potenciaPlaca: 570,  // W por placa
+  potenciaPlaca: 600,  // W por placa
   areaPlaca: 2.6,      // m² por placa
   custoKwp: 3800,      // R$/kWp instalado (estimativa de payback)
   fatorEconomia: 0.90  // % da conta efetivamente economizada

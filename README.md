@@ -20,10 +20,10 @@ Os parâmetros ficam no objeto `CONFIG`, no início do `<script>` em `index.html
 const CONFIG = {
   phone: '5519992734734',           // WhatsApp: 55 + DDD + número, só dígitos
   phoneDisplay: '(19) 99273-4734',  // como aparece na tela
-  tarifa: 0.95,        // R$/kWh
+  tarifa: 1.10,        // R$/kWh
   hsp: 5.0,            // horas de sol pleno médias
   pr: 0.78,            // fator de performance
-  potenciaPlaca: 570,  // W por placa
+  potenciaPlaca: 600,  // W por placa
   areaPlaca: 2.6,      // m² por placa
   custoKwp: 3800,      // R$/kWp instalado
   fatorEconomia: 0.90  // % da conta efetivamente economizada
